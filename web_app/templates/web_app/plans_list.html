@@ -1,0 +1,37 @@
+{% extends 'web_app/base.html' %}
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    {% for plan in plans %}
+        <div class="article">
+            <div class="title">
+                Заголовок: {{ plan.title }}</p>
+                <br>
+                <div class="content">
+                    Содержание: {{ plan.content }}</p>
+                    <br>
+                    </p>
+                     <br>
+                    <div class="from_date">
+                        Начало: {{ plan.from_date }}
+                        <br>
+                        <div>
+                            Окончание: {{ plan.to_date }}
+                            <div class="buttons">
+                                <a href="#" class="Delete">Done</a>
+                                <a href="#" class="Change">Change</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    {% endfor %}
+</div>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+{% endblock %}

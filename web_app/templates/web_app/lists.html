@@ -1,0 +1,18 @@
+{% extends 'web_app/base.html' %}
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <li class="link">
+        <a href="{% url 'plans' %}" class="link">Планы</a>
+    </li>
+    <li class="link">
+        <a href="{% url 'articles' %}" class="link">Записи Дневника</a>
+    </li>
+</div>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+{% endblock %}
